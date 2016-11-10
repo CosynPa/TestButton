@@ -15,7 +15,7 @@ class MyButton: UIButton {
         _ = titleLabel
         _ = imageView
         
-        titleLabel?.font = UIFont.systemFont(ofSize: 11)
+        titleLabel?.font = UIFont.systemFont(ofSize: 12)
         setImage(#imageLiteral(resourceName: "chrome"), for: .normal)
         setTitle("Button", for: .normal)
         self.contentVerticalAlignment = .fill
@@ -33,6 +33,8 @@ class MyButton: UIButton {
         
         let imageSize = currentImage?.size ?? .zero
         
+        print("-----------")
+        
         print("title size \(titleSize)")
         print("image size \(imageSize)")
         
@@ -42,6 +44,8 @@ class MyButton: UIButton {
         print("content size \(width) \(height)")
         
         print("intinsic size \(intrinsicContentSize)")
+        
+        print("-----------")
         
 //        for i in stride(from: CGFloat(5), through: 100, by: 0.1) {
 //            titleLabel?.font = UIFont.systemFont(ofSize: i)
@@ -59,7 +63,7 @@ class MyButton: UIButton {
     
     override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
         let rect = super.titleRect(forContentRect: contentRect)
-        print("title rect \(rect) content \(contentRect)")
+//        print("title rect \(rect) content \(contentRect)")
         return rect
     }
     
