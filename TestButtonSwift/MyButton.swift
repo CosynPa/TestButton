@@ -15,10 +15,12 @@ class MyButton: UIButton {
         _ = titleLabel
         _ = imageView
         
+        titleLabel?.font = UIFont.systemFont(ofSize: 11)
         setImage(#imageLiteral(resourceName: "chrome"), for: .normal)
-        setTitle("aaa", for: .normal)
+        setTitle("Button", for: .normal)
+        self.contentVerticalAlignment = .fill
         
-        contentEdgeInsets = UIEdgeInsets(top: 0, left: 0.2, bottom: 0, right: 0)
+        contentEdgeInsets = UIEdgeInsets(top: 0, left: 2, bottom: 0, right: -2)
         
         let font = titleLabel!.font!
         
@@ -40,11 +42,30 @@ class MyButton: UIButton {
         print("content size \(width) \(height)")
         
         print("intinsic size \(intrinsicContentSize)")
+        
+//        for i in stride(from: CGFloat(5), through: 100, by: 0.1) {
+//            titleLabel?.font = UIFont.systemFont(ofSize: i)
+//            let size = intrinsicContentSize
+//            
+//            assert(floor(size.width) == size.width && floor(size.height) == size.height)
+//        }
     }
     
     override func contentRect(forBounds bounds: CGRect) -> CGRect {
         let rect = super.contentRect(forBounds: bounds)
-        print("content rect \(rect) bounds \(bounds.size)")
+//        print("content rect \(rect) bounds \(bounds.size)")
+        return rect
+    }
+    
+    override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+        let rect = super.titleRect(forContentRect: contentRect)
+        print("title rect \(rect) content \(contentRect)")
+        return rect
+    }
+    
+    override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
+        let rect = super.imageRect(forContentRect: contentRect)
+//        print("title rect \(rect) content \(contentRect)")
         return rect
     }
 }
