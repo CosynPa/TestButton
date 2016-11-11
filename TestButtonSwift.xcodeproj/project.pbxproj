@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2F46B01DD5716E003126BB /* CPTitlePositionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F46AF1DD5716E003126BB /* CPTitlePositionButton.swift */; };
+		7E2F46B21DD59A56003126BB /* CPImagePositionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F46B11DD59A56003126BB /* CPImagePositionButton.swift */; };
 		7EA2D01D1DD302EF0052EEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2D01C1DD302EF0052EEBF /* AppDelegate.swift */; };
 		7EA2D01F1DD302EF0052EEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2D01E1DD302EF0052EEBF /* ViewController.swift */; };
 		7EA2D0221DD302EF0052EEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA2D0201DD302EF0052EEBF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E2F46AF1DD5716E003126BB /* CPTitlePositionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTitlePositionButton.swift; sourceTree = "<group>"; };
+		7E2F46B11DD59A56003126BB /* CPImagePositionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPImagePositionButton.swift; sourceTree = "<group>"; };
 		7EA2D0191DD302EF0052EEBF /* TestButtonSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestButtonSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA2D01C1DD302EF0052EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EA2D01E1DD302EF0052EEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				7EA2D01C1DD302EF0052EEBF /* AppDelegate.swift */,
 				7EA2D01E1DD302EF0052EEBF /* ViewController.swift */,
 				7EA2D02E1DD302FF0052EEBF /* MyButton.swift */,
+				7E2F46AF1DD5716E003126BB /* CPTitlePositionButton.swift */,
+				7E2F46B11DD59A56003126BB /* CPImagePositionButton.swift */,
 				7EA2D0201DD302EF0052EEBF /* Main.storyboard */,
 				7EA2D0231DD302EF0052EEBF /* Assets.xcassets */,
 				7EA2D0251DD302EF0052EEBF /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2F46B01DD5716E003126BB /* CPTitlePositionButton.swift in Sources */,
 				7EA2D01F1DD302EF0052EEBF /* ViewController.swift in Sources */,
+				7E2F46B21DD59A56003126BB /* CPImagePositionButton.swift in Sources */,
 				7EA2D01D1DD302EF0052EEBF /* AppDelegate.swift in Sources */,
 				7EA2D02F1DD302FF0052EEBF /* MyButton.swift in Sources */,
 			);
@@ -303,6 +311,7 @@
 				7EA2D02D1DD302EF0052EEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
